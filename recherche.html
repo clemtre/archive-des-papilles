@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<script src="/assets/js/recherche.js" defer></script>
+<div class="filtres-ctn">
+  <div class="filtres-entete">
+    <button onclick="alterner(0)">
+      <p>Les recettes</p>
+    </button>
+    <button onclick="alterner(1)">
+      <p>Les collections</p>
+    </button>
+  </div>
+  <div id="onglet-recettes">
+      {%- for recette in site.recettes -%}
+      <p>{{recette.titre}}</p>
+      {%- endfor -%}
+  </div>
+  <div id="onglet-collections">
+    {%- for collection in site.collections -%}
+      <p>{{collection.titre}}</p>
+      {%- endfor -%}
+  </div>
+</div>

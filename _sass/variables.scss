@@ -1,0 +1,37 @@
+$hauteur-entete: 200px;
+$vert: rgb(42, 224, 153);
+$violet: rgb(145, 146, 252);;
+$rouge-rose: rgb(249, 57, 105);;
+$noir-brun: rgb(59, 0, 0);
+$blanc: #fefefe;
+
+$duree-transition: .2s;
+
+$F : Fluxisch;
+$M : MetaAccanthis;
+$MA : MetaAccanthis-Alternate;
+
+$S: 20px;
+$M: 30px;
+$L: 40px;
+$XL: 60px;
+
+$largeur-carte : calc(100vw - 100px);
+$hauteur-carte : calc(100vw - -65.2px);
+// j'ai trouvé ce rapport hauteur/largeur à la louche
+
+$goutiere : 10px;
+$marges : 20vw;
+
+* {
+  color: $noir-brun;
+}
+
+.regular {
+  font-size: 32px;
+  //   line-height: 30px;
+}
+
+.vert {
+  color: $vert;
+}

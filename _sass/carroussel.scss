@@ -1,0 +1,38 @@
+.carte img {
+  z-index: 1;
+  box-sizing: border-box;
+  // rotate: 30deg;
+  transform-origin: center;
+  width: $largeur-carte;
+  object-fit: contain;
+  max-height: 90vh;
+  overflow: visible;
+
+}
+img:hover {
+  border: 1px solid olive;
+}
+
+#container {
+  position: absolute;
+  transform-origin: center;
+  width: 1px;
+  height: 1vh;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: calc(50vw - #{$largeur-carte / 2});
+  top: calc(50vh - #{$hauteur-carte / 2});
+}
+
+.home {
+  max-width: 100%;
+  // pas une super idée
+}
+.ui-draggable {
+
+  overflow: hidden;
+}
+.carte {
+  transform-origin: center;
+  position: absolute;
+}

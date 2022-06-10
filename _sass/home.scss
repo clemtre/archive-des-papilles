@@ -1,0 +1,29 @@
+
+.home {
+    // z-index: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-direction: column;
+    height : 100vh;
+    justify-content: space-between;
+
+    * {
+    margin: 0;    
+
+    }
+}
+
+
+
+
+.home h1{
+    text-align: center;
+    font-size: $XL;
+    height: 100px;
+    z-index: 30;
+}
+
+.cor-optique {
+    margin-top: 20px;
+}

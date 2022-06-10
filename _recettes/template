@@ -1,0 +1,19 @@
+---
+titre : '' 
+nom : ''
+num : ''
+age : ''
+type: ''
+saveur: '?'
+regime: '?'
+car_pratiques: 
+    - ''
+car_humaines:
+    - ''
+thematiques:
+    - ''
+images:
+    - 'assets/'
+---
+
+Texte **texte**{:. accent}

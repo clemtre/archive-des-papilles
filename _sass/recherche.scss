@@ -1,0 +1,20 @@
+.filtres-entete {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    button {
+        width: 100%;
+        background: none;
+        p {
+            color: $violet;
+            font-size: $M;
+
+        }
+
+    }
+}
+
+#onglet-collections {
+    display: none
+}

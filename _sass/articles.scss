@@ -1,0 +1,32 @@
+article {
+  padding: $goutiere * 4;
+  padding-top: $goutiere * 2;
+  * {
+    font-size: $S;
+    line-height: $S + 2px;
+  }
+  a {
+    display: block;
+  }
+}
+blockquote {
+  padding-left: $goutiere * 4;
+  padding-right: $goutiere * 2;
+  border: none;
+  p {
+    font-family: Felltype;
+    font-size: $M;
+    font-style: normal;
+    line-height: $M + 4px;
+  }
+}
+
+.signature {
+  padding-top: $goutiere;
+  line-height: $S + 2px;
+  display: inline-block;
+  font-weight: normal;
+  color: $vert;
+  font-family: $F;
+  font-style: normal;
+}

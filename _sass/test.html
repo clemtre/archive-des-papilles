@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Titre du document</title>
+    <style>
+      body{
+      background-color: #666;
+      }
+      .item {
+      width: 600px;
+      height: 400px;
+      top:0;
+      offset-position: 0% 0%;
+      /* border-radius: 50%; */
+      border: 10px solid blue;
+    transition:.2s all;
+    offset-path: circle(50% at 25% 25%);
+    offset-distance:0;
+      }
+      #box1 {
+      background-color: #F2C500;
+      offset-distance: 50%;
+      }
+      #box2 {
+      background-color: #1c87c9;
+      offset-distance: 200%;
+      }
+
+      @keyframes move {
+  from {
+    offset-distance: 0%;
+  }
+
+  to {
+    offset-distance: 100%;
+  }
+}
+
+#offsetElement {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  offset-path: circle(50% at 25% 25%) auto;
+  animation: move 3s linear infinite;
+}
+
+    </style>
+  <body>
+    <div class="item" >
+        <div id="offsetElement">a</div>
+    </div>
+  </body>
+</html>
