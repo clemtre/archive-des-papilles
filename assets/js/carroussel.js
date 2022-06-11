@@ -9,6 +9,7 @@ for (let i = 0; i < cartes.length; i++) {
   $(cartes[i]).draggable({
     // revert: true,
     scroll:false ,
+    distance: 50,
     start: function (event, ui) {
       console.log(x);
       event.target.style.transition = "none";

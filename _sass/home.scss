@@ -1,12 +1,9 @@
 
 .home {
     // z-index: 0;
-    display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
-    flex-direction: column;
-    height : 100vh;
-    justify-content: space-between;
+    height : 100%;
 
     * {
     margin: 0;    
@@ -22,6 +19,14 @@
     font-size: $XL;
     height: 100px;
     z-index: 30;
+    position: absolute;
+    width: 100%;
+}
+.home h1:nth-of-type(1){
+    top: 0;
+}
+.home h1:nth-of-type(2){
+    bottom: 0;
 }
 
 .cor-optique {
