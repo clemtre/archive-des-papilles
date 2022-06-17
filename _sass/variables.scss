@@ -7,13 +7,17 @@ $blanc: #fefefe;
 
 $duree-transition: .2s;
 
-$F : Fluxisch;
-$M : MetaAccanthis;
-$MA : MetaAccanthis-Alternate;
+$F : 'Fluxisch';
+$M : 'MetaAccanthis';
+$MA : 'MetaAccanthis-Alternate';
 
-$S: 20px;
+$S: 14pt;
+$S-LH: 16pt;
+
 $M: 30px;
-$L: 40px;
+$M-LH: $M * 1.05;
+$L: 17pt;
+$L-LH: 20.4pt;
 $XL: 60px;
 
 $largeur-carte : calc(100vw - 100px);

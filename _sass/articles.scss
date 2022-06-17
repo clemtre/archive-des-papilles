@@ -6,7 +6,7 @@ article {
     line-height: $S + 2px;
   }
   a {
-    display: block;
+    display: inline;
   }
 }
 blockquote {
@@ -29,4 +29,12 @@ blockquote {
   color: $vert;
   font-family: $F;
   font-style: normal;
+}
+
+.type {
+  background-color: yellow;
+}
+
+.pratique {
+  background-color: blue;
 }

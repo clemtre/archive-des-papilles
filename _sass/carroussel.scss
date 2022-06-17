@@ -2,15 +2,12 @@
   z-index: 1;
   box-sizing: border-box;
   // rotate: 30deg;
-  transform-origin: center;
-  width: $largeur-carte;
+  transform-origin: bottom;
+  height: calc(100vh - 10px);
+  max-width: calc(100vw - 10px);
   object-fit: contain;
-  max-height: 90vh;
   overflow: visible;
-
-}
-img:hover {
-  border: 1px solid olive;
+  transition: all 1s;
 }
 
 #container {
@@ -20,8 +17,9 @@ img:hover {
   height: 1vh;
   margin-top: auto;
   margin-bottom: auto;
-  left: calc(50vw - #{$largeur-carte / 2});
-  top: calc(50vh - #{$hauteur-carte / 2});
+  // overflow: hidden;
+  // left: calc(50vw - #{$largeur-carte / 2});
+  // top: calc(50vh - #{$hauteur-carte / 2});
 }
 
 .home {
@@ -33,6 +31,7 @@ img:hover {
   overflow: hidden;
 }
 .carte {
+  width: fit-content;
   transform-origin: center;
   position: absolute;
 }

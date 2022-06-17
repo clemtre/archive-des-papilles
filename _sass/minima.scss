@@ -1,5 +1,4 @@
-@import "variables", "fonts";
-
+@import "fonts","variables";
 
 body {
   background-color: white;
@@ -16,7 +15,6 @@ p {
   font-family: $F;
   font-size: 0.95em;
 }
-
 
 $base-font-family: $F;
 $base-font-size: 16px !default;
@@ -60,5 +58,5 @@ $on-laptop: 800px !default;
 }
 
 // Import partials.
-@import "minima/base", "minima/layout", "minima/syntax-highlighting", 
-  "home", "carroussel", "articles", "recherche.scss";
+@import "minima/base", "minima/layout", "minima/syntax-highlighting", "home",
+  "carroussel", "articles", "recherche.scss", "type.scss", "global.scss", "about.scss";

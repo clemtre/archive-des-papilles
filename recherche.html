@@ -14,7 +14,11 @@ layout: default
   </div>
   <div id="onglet-recettes">
       {%- for recette in site.recettes -%}
-      <p>{{recette.titre}}</p>
+      <a href="{{recette.url}}">{{recette.titre}}</a>
+      {%- for autre_recette in recette.autres_recettes -%}
+      <a href="/recettes/{{autre_recette}}">{{autre_recette.titre}}</p>
+      {%- endfor -%}
+      <a href="{{recette.autres}}">{{recette.titre}}</a>
       {%- endfor -%}
   </div>
   <div id="onglet-collections">

@@ -1,0 +1,49 @@
+.bordure {
+  overflow: hidden !important;
+  width: 200%;
+  height: 20px;
+  background: linear-gradient(0deg, $rouge-rose, #FFF);
+  margin-left: -20%;
+  margin-bottom: $goutiere * 2;
+}
+.feuille {
+  margin: $goutiere;
+  font-size: $S;
+  line-height: $S + 5px;
+  img {
+    line-height: 0;
+  }
+  .overline {
+    background: radial-gradient(ellipse calc(100% - 10px) calc(10px), #FFF, $rouge-rose);
+    padding: 2px;
+  }
+  a {
+    color: $noir-brun;
+    text-decoration: underline;
+  }
+}
+.feuille::before {
+}
+
+.droite {
+  transform: none !important;
+}
+.fleche {
+  transform: rotate(-90deg);
+  transition: all .5s;
+  font-weight: bold;
+}
+.fleche:hover {
+  cursor: pointer;
+  color: $rouge-rose;
+}
+.fleche-active {
+  transform: rotate(90deg);
+}
+#liste-inspi {
+  margin: 0;
+  display: none;
+}
+p {
+  margin: 0;
+}

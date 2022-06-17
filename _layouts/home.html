@@ -6,35 +6,39 @@ layout: default
   {{ content }}
   <script src="assets/js/jquery-3.6.0.min.js"></script>
   <script src="assets/js/jquery-ui.min.js"></script>
-  <script src="assets/js/jquery-ui.min.js"></script>
   <script src="assets/js/jquery.ui.touch-punch.min.js"></script>
   <script src="assets/js/carroussel.js" defer></script>
   <h1 class="cor-optique">L'archive</h1>
 
   <div class="cartes-ctn">
-      <div class="carroussel" id="container">
-        
-        {%- for recette in site.recettes -%}
-        {%- if recette.entete -%}
-        <a class="carte" href="{{ recette.url | relative_url }}">
+    <div class="carroussel" id="container">
+      {%- for recette in site.recettes -%} {%- if recette.entete -%}
+      <div class="carte">
 
-            <img  src="{{recette.entete}}" alt="" />
+        <a href="{{ recette.url | relative_url }}">
+          <img
+          class="carte-img"
+          onload="fadeIn(this)"
+          src="{{recette.entete}}"
+          alt=""
+          />
         </a>
-        {%- endif -%}
-        {%- endfor -%}
-        
-        {%- for collection in site.collections -%}
-        {%- if collection.entete -%}
-        
-        <a class="carte" href="{{ collection.url | relative_url }}">
-          
-          <img src="{{collection.entete}}" alt="" />
-        </a>
-        {%- endif -%}
-        
-        {%- endfor -%}
       </div>
-        
+      {%- endif -%} {%- endfor -%} {%- for collection in site.collections -%}
+      {%- if collection.entete -%}
+<div class="carte">
+
+  <a  href="{{ collection.url | relative_url }}">
+    <img
+    class="carte-img"
+    onload="fadeIn(this)"
+    src="{{collection.entete}}"
+    alt=""
+    />
+  </a>
+</div>
+  {%- endif -%} {%- endfor -%}
+</div>
   </div>
   <h1>Des papilles</h1>
 </div>

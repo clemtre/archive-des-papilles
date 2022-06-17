@@ -117,10 +117,9 @@
       justify-content: center;
       #entete-emplacement {
         align-self: center;
-        background-color: $noir-brun;
         width: 300px;
-        height: 120px;
-        border-radius: 50%;
+        object-fit: contain;
+        height: 70%;
         p {
           font-family: $M;
           text-align: center;
@@ -134,7 +133,7 @@
     section {
       display: flex;
       flex-wrap: wrap;
-      flex-grow: 1;
+      flex-grow: 2;
       justify-content: center;
       flex-direction: column;
       text-align: center;
@@ -241,10 +240,15 @@ input:checked ~ label p {
   }
 }
 
+.titre-nav {
+  max-height: 100%;
+}
+
 /**
  * Page content
  */
 .page-content {
+  overflow-x: hidden;
   padding: 0;
   // padding: $spacing-unit 0;
   flex: 1;

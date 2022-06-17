@@ -1,0 +1,50 @@
+.titre-inline {
+  max-height: $L * 2;
+  display: inline;
+  vertical-align: baseline;
+  transform: translateY($L / 1.4);
+  mix-blend-mode: multiply;
+//   position: absolute;
+}
+.bold {
+    line-height: $M-LH;
+    font-weight: bold;
+}
+.rouge {
+  color: $rouge-rose;
+}
+.souligne {
+  text-decoration: underline;
+}
+.centre {
+  text-align: center;
+  width: 100%;
+  display: block;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.indent {
+  display: block;
+  text-indent: $goutiere * 6;
+}
+.retraits a{
+  text-indent: 10px;
+  break-before: always;
+}
+
+.L {
+  font-size: $L;
+  line-height: $L-LH;
+}
+.S {
+  font-size: $S;
+  line-height: $S-LH;
+}
+.S:not(:first-of-type):is(p){
+  margin-top: $S-LH;
+}
+
+.chapeau {
+  
+}
