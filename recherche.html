@@ -11,9 +11,28 @@ layout: recette
       <li><a href="#fragment-2">Collections</a></li>
     </ul>
     <div id="fragment-1">
+      <div class="tags">
+
+        {%- for tag in site.data.db.tags -%}
+        <div class="tag-ctn">
+          <p>{{tag.string}}</p>
+          <div class="tag-buttons">
+
+          {%- for val in tag.vals -%}
+          
+          <button class="{{tag.nom}}">{{val}}</button>
+          {%- endfor -%}
+        </div>
+      </div>
+        
+        {%- endfor -%}
+      </div>
       {%- for recette in site.recettes -%}
       <a href="{{recette.url}}">{{recette.titre}}</a><br>
-
+      <span>{{recette.car_pratiques}}</span><br>
+      <span>{{recette.saveur}}</span><br>
+      <span>{{recette.type}}</span><br>
+      <span>{{recette.regime}}</span><br>
       {%- endfor -%}
     </div>
     <div id="fragment-2">

@@ -1,5 +1,9 @@
 #tabs {
     ul {
+        .ui-tabs-active {
+            color: blue !important;
+            border: none;
+        }
         position: absolute;
         top:0;
         left: 0;
@@ -10,6 +14,7 @@
         margin: 0;
         z-index: 0;
         li {
+            border-top: none;
             border: 2px solid grey;
             width: 50%;
             text-align: center;
@@ -18,8 +23,38 @@
             padding: $goutiere*2 0;
         }
     }
-    div {
+    .tags {
         margin-top: $goutiere*6;
     }
 
+}
+
+button {
+    border: none;
+    font-family: $Meta;
+    font-size: $L * 2;
+}
+.tags {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+
+    gap: $goutiere;
+    .tag-ctn {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        p {
+            font-size: $L;
+    color: $rouge-rose;
+        }
+        .tag-buttons {
+            gap: $goutiere;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    }
 }

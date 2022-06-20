@@ -1,3 +1,36 @@
+tags:
+  - nom: type
+    string: Un·e
+    vals:
+      - entrée
+      - plat
+      - dessert
+      - apéritif
+      - boisson
+      - autre
+  - nom: saveur
+    string: à la saveur
+    vals:
+      - salée
+      - légère
+      - chaude
+      - sucrée
+      - consistante
+      - fraîche
+  - nom: regime
+    string: de régime
+    vals:
+      - végétarien
+      - vegan
+      - sans gluten
+  - nom: pratique
+    string: plutôt
+    vals:
+      - facile
+      - rapide
+      - technique
+      - fond de placard
+
 personnes:
   ############################################################################################
   - nom: Arthur Pouzet
