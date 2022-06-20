@@ -14,5 +14,5 @@ function alterner(arg){
     }
     console.log(isRecette)
 
-    return isRecette = !isRecette
+    return isRecette = isRecette 
 }

@@ -26,6 +26,7 @@ Petite anecdote numéro 2 : il se trouve que le tiramisu est aussi le dessert pr
 - - -
 # Le tiramisu Gargantuesque
 *Pour 6 personnes, à faire la veille*
+- - - 
 
 ## Ingrédients : 
 - 250g de mascarpone à sortir du frigo 1/2h avant 
