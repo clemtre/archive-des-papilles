@@ -6,18 +6,18 @@ layout: recette
 
 <script src="/assets/js/recherche.js" defer></script>
 <div id="tabs">
-    <ul>
-      <li><a href="#fragment-1">Recettes</a></li>
-      <li><a href="#fragment-2">Collections</a></li>
-    </ul>
-    <div id="fragment-1">
-      <div class="tags">
-
-        {%- for tag in site.data.db.tags -%}
-        <div class="tag-ctn">
-          <p>{{tag.string}}</p>
+  <ul>
+    <li><a href="#fragment-1">Les recettes</a></li>
+    <li><a href="#fragment-2">Les collections</a></li>
+  </ul>
+  <div id="fragment-1">
+    <div class="tags">
+      
+      {%- for tag in site.data.db.tags -%}
+      <div class="tag-ctn">
+        <p>{{tag.string}}</p>
           <div class="tag-buttons">
-
+            
           {%- for val in tag.vals -%}
           
           <button class="{{tag.nom}}">{{val}}</button>
@@ -25,8 +25,9 @@ layout: recette
         </div>
       </div>
         
-        {%- endfor -%}
+      {%- endfor -%}
       </div>
+      (j'ai besoin de récupérer les tags pour les filtrer je les vire après) <br>
       {%- for recette in site.recettes -%}
       <a href="{{recette.url}}">{{recette.titre}}</a><br>
       <span>{{recette.car_pratiques}}</span><br>
@@ -36,10 +37,22 @@ layout: recette
       {%- endfor -%}
     </div>
     <div id="fragment-2">
-      {%- for thematique in site.thematiques -%}
-      <a href="{{thematique.url}}">{{thematique.titre}}</a><br>
-      
-      {%- endfor -%}
+      <div class="thematiques-filtres">
+      <p>Chercher de</p>
+  
+        <button onclick="plusRecente()">la plus récente à</button>
+        <button onclick="plusAncienne()">la plus ancienne</button>
+      </div>
+      <div class="thematiques-ctn">
+        {%- for thematique in site.thematiques -%}
+        <div class="thematique">
+          <div class="bordure"></div>
+
+          <a href="{{thematique.url}}">{{thematique.titre}}</a>
+        </div>
+        
+        {%- endfor -%}
+      </div>
     </div>
     </div>
     <script>

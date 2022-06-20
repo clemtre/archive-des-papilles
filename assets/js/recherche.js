@@ -17,7 +17,24 @@
 //     return isRecette = isRecette 
 // }
 
-$( "#tabs" ).tabs();
+$( "#tabs" ).tabs({
+    active: 1
+});
 
-console.log('a')
-console.log('a')
+function plusAncienne(){
+    const ctn = $('.thematiques-ctn')
+    const thematiques = ctn.children('div')
+    ctn.append(thematiques.get().reverse())
+}
+function plusRecente(){
+    const ctn = $('.thematiques-ctn')
+    const thematiques = ctn.children('div')
+    ctn.append(thematiques.get().reverse())
+}
+$( function() {
+    $( "#accordion" ).accordion(
+        {
+            header : ".thematique"
+        }
+    );
+  } );
