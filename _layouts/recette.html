@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {%- include head.html -%}
+  
+  <body>
+
+    <script src="/assets/js/jquery-3.6.0.min.js"></script>
+    <script src="/assets/js/jquery-ui.min.js"></script>
+
+    <script src="/assets/js/recettes.js" defer></script>
+    
+    {%- include header.html -%}
+    <main class="page-content" aria-label="Content">
+      {% if page.images.size > 2 %}
+      <div class="carrousel-recette-wrap">
+        
+        <div class="carrousel-recette">
+          
+          
+          {% assign i = 0 %}
+          {%- for image in page.images -%}
+          <figure class="img">
+            <img  src="/assets/images/{{image}}" alt="">
+            <figcaption>{{page.legendes[i]}}</figcaption>
+
+          </figure>
+          {% assign i = i | plus:1 %}
+          {%- endfor  -%}
+
+
+        </div>
+        <div class="compteur">
+          <span id="img-curr"></span>
+          <span>
+            sur
+
+          </span>
+          <span id="img-total"></span>
+        </div>
+      </div>
+      {%- else -%}
+      <div class="carrousel-recette-wrap">
+
+        <img class="carrousel-solo" src="/assets/images/{{page.images[0]}}" alt="">
+</div>
+      {%- endif -%}
+
+      <!-- <div class="wrapper"> -->
+        {{ content }}
+        
+        
+      </main>
+      <p id="telecharger" class="L centre souligne rouge">Télécharger la recette</p>
+    <script>
+    </script>
+  </body>
+
+</html>

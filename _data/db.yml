@@ -1,0 +1,42 @@
+personnes:
+  ############################################################################################
+  - nom: Arthur Pouzet
+    age: 24
+    recettes:
+      ############################################################################################
+      - titre: Le tiramisu Gargantuesque
+        titre_alphabetique: Tiramisu Gargantuesque
+        thematiques : Recettes d'anniversaire
+        contexte: le_tiramisu_arthur
+        recette: fr_le_tiramisu_arthur
+        type: dessert
+        saveur:
+          - sucré
+          - frais
+          - consistant
+        entete: assets/arthur_pouzet/Tiramisu_Arthur_annote_screenshot.png
+        images:
+          - assets/arthur_pouzet/Tiramisu_Arthur_annote_screenshot.png
+          - assets/arthur_pouzet/Tiramisu_Arthur_Pouzet.png
+      ############################################################################################
+      - titre: L'apéro collaboratif
+        titre_alphabetique: Apéro collaboratif
+        type: apéro
+        saveur: salé
+
+  ############################################################################################
+  - nom: Iris Crayol
+    age: 23
+    recettes:
+      ############################################################################################
+      - titre: La salade de tomates fizz, vinaigrette roulette russe
+        titre_alphabetique: Salade de tomates fizz, vinaigrette roulette russe
+        type : entrée
+        saveur:
+          - salé
+          - sucré
+        regime : végétarien
+        car_pratiques : 
+          - rapide
+          - facile
+

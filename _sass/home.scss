@@ -21,6 +21,7 @@
     z-index: 30;
     position: absolute;
     width: 100%;
+    transition: .5s all;
 }
 .home h1:nth-of-type(1){
     top: 0;
@@ -31,4 +32,8 @@
 
 .cor-optique {
     margin-top: 20px;
+}
+
+.fadeOut {
+    opacity: 0;
 }

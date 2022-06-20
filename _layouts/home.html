@@ -19,22 +19,25 @@ layout: default
           <img
           class="carte-img"
           onload="fadeIn(this)"
-          src="{{recette.entete}}"
+          src="/assets/images/{{recette.entete}}"
           alt=""
           />
+          <p class="carte-titre">{{recette.titre}}</p>
         </a>
       </div>
-      {%- endif -%} {%- endfor -%} {%- for collection in site.collections -%}
-      {%- if collection.entete -%}
+      {%- endif -%} {%- endfor -%} {%- for thematique in site.thematiques -%}
+      {%- if thematique.entete -%}
 <div class="carte">
 
-  <a  href="{{ collection.url | relative_url }}">
+  <a  href="{{ thematique.url | relative_url }}">
     <img
     class="carte-img"
     onload="fadeIn(this)"
-    src="{{collection.entete}}"
+    src="/assets/images/{{thematique.entete}}"
     alt=""
     />
+    <p class="carte-titre">{{thematique.titre}}</p>
+
   </a>
 </div>
   {%- endif -%} {%- endfor -%}

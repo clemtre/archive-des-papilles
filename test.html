@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div>
+  {% for personne in site.data.db.personnes %}
+  <h3>{{ personne.nom }}</h3>
+  <ul>
+    {% for recette in personne.recettes %}
+    <li>
+      <a href="recettes/{{ recette.contexte }}">{{ recette.titre }}</a>
+      <a href="recettes/{{ recette.recette }}">{{ recette.recette }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+</div>

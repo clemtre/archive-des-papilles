@@ -1,12 +1,16 @@
+let titreSite = true;
+
 const images = document.querySelectorAll(".carte-img");
 function fadeIn(obj) {
   obj.style.rotate = "0deg";
-  obj.parentNode.parentNode.style.left = (window.innerWidth - obj.parentNode.getBoundingClientRect().width) / 2 + "px"
+  obj.parentNode.parentNode.style.left =
+    (window.innerWidth - obj.parentNode.getBoundingClientRect().width) / 2 +
+    "px";
 }
 const cartes = document.querySelectorAll(".carte");
 const container = document.getElementById("container");
 for (let i = 0; i < images.length; i++) {
-  images[i].style.rotate = Math.random()* 20 - 10 + "deg";
+  images[i].style.rotate = Math.random() * 20 - 10 + "deg";
 }
 
 for (let i = 0; i < cartes.length; i++) {
@@ -20,7 +24,9 @@ for (let i = 0; i < cartes.length; i++) {
     scroll: false,
     distance: 50,
     start: function (event, ui) {
-      console.log(x);
+      $("h1").addClass("fadeOut");
+      $(".carte-titre").removeClass("active");
+      event.target.children[0].children[1].classList.add("active");
       event.target.style.transition = "none";
     },
     drag: function (event, ui) {
@@ -41,7 +47,9 @@ for (let i = 0; i < cartes.length; i++) {
         event.target.style.zIndex = 0;
         event.target.style.left = "0";
         event.target.style.top = (window.innerHeight - rect) / 2 + "px";
-        event.target.style.left = (window.innerWidth - event.target.getBoundingClientRect().width) / 2 + "px";
+        event.target.style.left =
+          (window.innerWidth - event.target.getBoundingClientRect().width) / 2 +
+          "px";
       }
       vaSortir = false;
     },

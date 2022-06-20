@@ -2,7 +2,7 @@
 
 body {
   background-color: white;
-  font-family: $F;
+  font-family: $Flux;
   font-weight: 200;
 }
 h1 {
@@ -12,11 +12,11 @@ h1 {
 }
 
 p {
-  font-family: $F;
+  font-family: $Flux;
   font-size: 0.95em;
 }
 
-$base-font-family: $F;
+$base-font-family: $Flux;
 $base-font-size: 16px !default;
 $base-font-weight: 400 !default;
 $small-font-size: $base-font-size * 0.875 !default;
@@ -59,4 +59,4 @@ $on-laptop: 800px !default;
 
 // Import partials.
 @import "minima/base", "minima/layout", "minima/syntax-highlighting", "home",
-  "carroussel", "articles", "recherche.scss", "type.scss", "global.scss", "about.scss";
+  "carroussel","carroussel-recette", "articles", "recherche.scss", "type.scss", "global.scss", "about.scss";
