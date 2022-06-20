@@ -1,26 +1,29 @@
 ---
-layout: default
+layout: recette
 ---
+<script src="/assets/js/jquery-3.6.0.min.js"></script>
+<script src="/assets/js/jquery-ui.min.js"></script>
 
 <script src="/assets/js/recherche.js" defer></script>
-<div class="filtres-ctn">
-  <div class="filtres-entete">
-    <button onclick="alterner(0)">
-      <p>Les recettes</p>
-    </button>
-    <button onclick="alterner(1)">
-      <p>Les collections</p>
-    </button>
-  </div>
-  <div id="onglet-recettes">
+<div id="tabs">
+    <ul>
+      <li><a href="#fragment-1">Recettes</a></li>
+      <li><a href="#fragment-2">Collections</a></li>
+    </ul>
+    <div id="fragment-1">
       {%- for recette in site.recettes -%}
       <a href="{{recette.url}}">{{recette.titre}}</a><br>
 
       {%- endfor -%}
-  </div>
-  <div id="onglet-collections">
-    {%- for collection in site.collections -%}
-      <p>{{collection.titre}}</p>
+    </div>
+    <div id="fragment-2">
+      {%- for thematique in site.thematiques -%}
+      <a href="{{thematique.url}}">{{thematique.titre}}</a><br>
+      
       {%- endfor -%}
-  </div>
-</div>
+    </div>
+    </div>
+    <script>
+    $( "#tabs" ).tabs();
+    
+    </script>

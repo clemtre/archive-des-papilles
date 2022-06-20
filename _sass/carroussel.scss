@@ -4,20 +4,29 @@
   // rotate: 30deg;
   transform-origin: bottom;
   height: calc(100vh - 10px);
+  max-height: 50vh;
   max-width: calc(100vw - 10px);
   object-fit: contain;
   overflow: visible;
   transition: all 1s;
+  border-radius: 20px;
 }
 
 .carte-titre {
   position: absolute;
-  bottom: 20px;
+  // background-color: $noir-brun;
+  // color: $blanc;
+  bottom: -100px;
+  // overflow: visible !important;
   width: 80%;
+  font-family: $Meta !important;
   margin: 0 10%;
   font-size: $M;
+  line-height: $M-LH;
+  padding: $goutiere 0;
   text-align: center;
   opacity: 0;
+  text-decoration: underline;
 }
 .active {
   opacity: 1;
@@ -41,7 +50,7 @@
 }
 .ui-draggable {
 
-  overflow: hidden;
+  // overflow: hidden;
 }
 .carte {
   width: fit-content;

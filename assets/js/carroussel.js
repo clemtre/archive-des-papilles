@@ -24,10 +24,18 @@ for (let i = 0; i < cartes.length; i++) {
     scroll: false,
     distance: 50,
     start: function (event, ui) {
-      $("h1").addClass("fadeOut");
+      $(".titre-img").addClass("fadeOut");
+      console.log(event.target.nextSibling.children[0].children[1])
+      // event.target.style.transition = "none";
       $(".carte-titre").removeClass("active");
-      event.target.children[0].children[1].classList.add("active");
-      event.target.style.transition = "none";
+      if(event.target.previousSibling){
+        event.target.previousSibling.children[0].children[1].classList.add("active")
+      }
+      else {
+        // fallback qunad target = carte-titre[carte-titre.length]
+        // à implémenter
+        event.target.parentNode.parentNode.parentNode.children[event.target.parentNode.parentNode.parentNode.children.length].children[0].children[1].classList.add("active")
+      }
     },
     drag: function (event, ui) {
       let largeur = event.target.getBoundingClientRect().width;
@@ -35,19 +43,19 @@ for (let i = 0; i < cartes.length; i++) {
       if (
         Math.abs(ui.position.left - largeur) > largeur ||
         Math.abs(ui.position.top - hauteur) > hauteur
-      ) {
-        vaSortir = true;
-      }
-    },
-    stop: function (event, ui) {
-      if (vaSortir) {
-        event.target.style.transition = "all .2s";
-        cartes.forEach((j) => j.style.zIndex++);
-        const rect = event.target.getBoundingClientRect().height;
-        event.target.style.zIndex = 0;
-        event.target.style.left = "0";
-        event.target.style.top = (window.innerHeight - rect) / 2 + "px";
-        event.target.style.left =
+        ) {
+          vaSortir = true;
+        }
+      },
+      stop: function (event, ui) {
+        if (vaSortir) {
+          event.target.style.transition = "all .2s";
+          cartes.forEach((j) => j.style.zIndex++);
+          const rect = event.target.getBoundingClientRect().height;
+          event.target.style.zIndex = 0;
+          event.target.style.left = "0";
+          event.target.style.top = (window.innerHeight - rect) / 2 + "px";
+          event.target.style.left =
           (window.innerWidth - event.target.getBoundingClientRect().width) / 2 +
           "px";
       }

@@ -1,20 +1,25 @@
-.filtres-entete {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    width: 100%;
-    button {
+#tabs {
+    ul {
+        position: absolute;
+        top:0;
+        left: 0;
+        display: flex;
+        flex-direction: row;
         width: 100%;
-        background: none;
-        p {
-            color: $violet;
+        // background-color: red;
+        margin: 0;
+        z-index: 0;
+        li {
+            border: 2px solid grey;
+            width: 50%;
+            text-align: center;
+            list-style: none;
             font-size: $M;
-
+            padding: $goutiere*2 0;
         }
-
     }
-}
+    div {
+        margin-top: $goutiere*6;
+    }
 
-#onglet-collections {
-    display: none
 }

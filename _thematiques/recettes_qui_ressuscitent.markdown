@@ -18,7 +18,7 @@ entete : resusciter.png
 Ressusciter : 
 1. revenir à la vie. 
 2. manifester une vie nouvelle.
-[Définitions : ressusciter - Dictionnaire Larousse](https://www.larousse.fr/dictionnaires/francais/ressusciter/68748).{:.reference}
+[Définitions : ressusciter - Dictionnaire Larousse](https://www.larousse.fr/dictionnaires/francais/ressusciter/68748){:.reference}.
 
 Il est parfois possible d’obtenir d’une recette une magie bien particulière. Au détour d’un fumet ou d’une bouchée, un petit miracle s’opère : on ramène soudainement à la vie quelqu’un.
 
@@ -29,7 +29,7 @@ Cuisiner comme moyen de faire perdurer la mémoire d’une personne s’explique
 *Anne-Lise Saive et Jane Plailly, chercheuses de l’Inserm, à propos de leur protocole de recherche sur le lien entre émotions, odeurs et précision mémorielle.*{:.reference}
 
 Quand un plat est si étroitement lié à une personne, au plaisir incarné d’être avec elle, le réaliser en son absence devient une forme d’invocation. 
-*“La recette de la Tarte à la viande me vient de ma belle-mère. Elle est écrite par elle même, et je la garde très précieusement, comme cela elle est toujours un peu là, à veiller sur nous.”*{:.extrait_recette} *Soizic, racontant [La tarte à la viande de Belle-mère](tarte_a_la_viande_soizic)*{:.lien_recette_S}.{:.reference} 
+*“La recette de la Tarte à la viande me vient de ma belle-mère. Elle est écrite par elle même, et je la garde très précieusement, comme cela elle est toujours un peu là, à veiller sur nous.”*{:.extrait_recette} *Soizic, racontant [La tarte à la viande de Belle-mère](tarte_a_la_viande_soizic){:.lien_recette_S}.*{:.reference} 
 
 On continue ainsi à faire vivre, à travers les saveurs et les gestes mimés; une recette conservée, c’est garder avec soi une incantation ordinaire qui peut ranimer, brièvement.
 
