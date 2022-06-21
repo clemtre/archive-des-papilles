@@ -27,13 +27,13 @@ layout: recette
         
       {%- endfor -%}
       </div>
-      (j'ai besoin de récupérer les tags pour les filtrer je les vire après) <br>
-      {%- for recette in site.recettes -%}
-      <a href="{{recette.url}}">{{recette.titre}}</a><br>
-      <span>{{recette.car_pratiques}}</span><br>
-      <span>{{recette.saveur}}</span><br>
-      <span>{{recette.type}}</span><br>
-      <span>{{recette.regime}}</span><br>
+      <button class="recherche-filtre vert">a -> z</button>
+      <button class="recherche-filtre rouge">0 -> 100 ans</button>
+      {% assign recettes_filtre = site.recettes | sort:'titre_alphabetique' %}
+      {%- for recette in recettes_filtre -%}
+      <p class="recherche-filtre-entete">{{recette.titre_alphabetique | slice: 0}}</p>
+      <a href="{{recette.url}}" class="brun Meta souligne">{{recette.titre}}</a><br>
+      <p class="recherche-personne">{{recette.nom}}, {{recette.age}} ans</p>
       {%- endfor -%}
     </div>
     <div id="fragment-2">

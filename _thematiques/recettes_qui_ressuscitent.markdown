@@ -49,5 +49,5 @@ Même problématique pour Siada, qui retrouve des bribes culinaires paternelles 
 
 Ce désarroi peut alors laisser place à une possibilité : celle de réinterpréter le souvenir culinaire de quelqu’un, s’y mêler, pour mieux le réincarner.
 
-Vous trouverez de quoi raviver des personnes et des papilles du côté de chez Bettina et sa [Sauce qui pourrait rendre fou](sauce_fou_bettina){:.lien_recette_S}, avec le [Cake au jambon d'une mamie étoile](cake_jambon_mamie_lucie){:.lien_recette_S}, ou encore en explorant [l'index de cette collection](index/collections/recettes_qui_ressucitent.html){:.underline}.
+Vous trouverez de quoi raviver des personnes et des papilles du côté de chez Bettina et sa [Sauce qui pourrait rendre fou](sauce_fou_bettina){:.lien_recette_S}, avec le [Cake au jambon d'une mamie étoile](cake_jambon_mamie_lucie){:.lien_recette_S}, ou encore en explorant [l'index de cette collection](index/collections/recettes_qui_ressucitent.html){:.souligne}{:.brun}.
 

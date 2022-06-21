@@ -1,32 +1,40 @@
 $hauteur-entete: 200px;
 $vert: rgb(42, 224, 153);
-$violet: rgb(145, 146, 252);;
-$rouge-rose: rgb(249, 57, 105);;
+$violet: rgb(145, 146, 252);
+$rouge-rose: rgb(249, 57, 105);
+$rouge-rose-claire: #ffe1e9;
 $noir-brun: rgb(59, 0, 0);
 $blanc: #fefefe;
 
-$duree-transition: .2s;
+$duree-transition: 0.2s;
 
-$Flux : 'Fluxisch';
-$FluxLight : 'Fluxisch-Light';
-$Meta : 'MetaAccanthis';
-$MA : 'MetaAccanthis-Alternate';
+$Flux: "Fluxisch";
+$FluxLight: "Fluxisch-Light";
+$FluxBold: "Fluxisch-Bold";
+$Meta: "MetaAccanthis";
+$MA: "MetaAccanthis-Alternate";
 
-$S: 14pt;
-$S-LH: 16pt;
+$S: 13pt;
+$S-LH: 14.5pt;
 
-$M: 30px;
-$M-LH: $M * 1.05;
-$L: 17pt;
-$L-LH: 20.4pt;
-$XL: 60px;
+$S-Meta: 12pt;
 
-$largeur-carte : calc(100vw - 100px);
-$hauteur-carte : calc(100vw - -65.2px);
+$L: 15pt;
+$L-LH: 18.4pt;
+
+$L-Meta: 14pt;
+
+$M: $S;
+$M-LH: $S-LH;
+$XL: $L;
+$XL-LH: $L-LH;
+
+$largeur-carte: calc(100vw - 100px);
+$hauteur-carte: calc(100vw - -65.2px);
 // j'ai trouvé ce rapport hauteur/largeur à la louche
 
-$goutiere : 10px;
-$marges : 20vw;
+$goutiere: 10px;
+$marges: 20vw;
 
 * {
   color: $noir-brun;

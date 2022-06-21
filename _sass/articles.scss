@@ -1,12 +1,11 @@
 blockquote {
   padding-left: $goutiere * 4;
-  padding-right: $goutiere * 2;
   border: none;
   p {
     font-family: Felltype;
-    font-size: $M;
-    font-style: normal;
-    line-height: $M + 4px;
+    font-size: $L * 1.1 !important;
+    font-style: normal !important;
+    line-height: $L-LH * 1.1 !important;
   }
 }
 
@@ -82,6 +81,7 @@ $REC-hauteur-entete: 100px;
 .recette-inner {
   overflow: scroll;
   height: 90vh;
+  width: 90%;
   h2 {
     color: $rouge-rose;
     font-size: $S;
@@ -172,6 +172,7 @@ em {
     a {
       font-style: normal;
       color: $noir-brun;
+      font-size: $L-Meta ;
       font-family: $Meta;
     }
     strong {
@@ -205,4 +206,14 @@ em {
 }
 video {
   width: 100%;
+}
+
+.recherche-filtre-entete {
+    font-size: $L;
+    font-family: $FluxBold;
+    color: $noir-brun !important;
+    padding-bottom: $goutiere !important;
+    &:first-of-type{
+      margin-top: $goutiere * 2;
+    }
 }

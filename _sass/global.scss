@@ -14,7 +14,8 @@
     line-height: 0;
   }
   .overline {
-    background: radial-gradient(ellipse calc(100% - 10px) calc(10px), #FFF, $rouge-rose);
+    background-color: $rouge-rose-claire;
+    // background: radial-gradient(ellipse calc(100% - 10px) calc(10px), #FFF, $rouge-rose);
     padding: 2px;
   }
   a {
@@ -38,9 +39,15 @@
   color: $rouge-rose;
 }
 .fleche-active {
+  color: $vert;
+
   transform: rotate(90deg);
 }
 #liste-inspi {
+
+  li {
+    color: $vert;
+  }
   margin: 0;
   display: none;
 }

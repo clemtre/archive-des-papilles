@@ -2,7 +2,7 @@
     overflow-y: hidden;
     ul {
         .ui-tabs-active {
-            color: blue !important;
+            // color: blue !important;
             border: none;
         }
         position: absolute;
@@ -20,13 +20,19 @@
                 font-family: $Flux;
                 font-weight: bold;
             }
+            border: 3px solid $rouge-rose;
             border-top: none;
-            border: 2px solid grey;
             width: 50%;
             text-align: center;
             list-style: none;
             font-size: $M;
             padding: $goutiere*2 0;
+            &:nth-of-type(1){
+                border-left: none;
+            }
+            &:nth-of-type(2){
+                border-right: none;
+            }
         }
     }
     .tags {
@@ -37,8 +43,11 @@
 
 button {
     border: none;
-    font-family: $Meta;
-    font-size: $L * 2;
+    font-family: $MA;
+    font-size: $L * 1.2 ;
+}
+button:hover, button:active, button:checked {
+    color: $vert;
 }
 .tags {
     display: flex;

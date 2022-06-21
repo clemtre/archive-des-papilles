@@ -20,7 +20,7 @@
 }
 #ph-multiligne {
   width: 100%;
-  transform: translateY(-$L-LH * 2.2);
+  transform: translateY(-$L-LH * 2.2 - 2px);
   bottom: 0;
   display: flex;
   flex-direction: column;
@@ -50,4 +50,10 @@
 #cor-width {
   width: 90%;
   padding-bottom: $L-LH;
+}
+
+p {
+  // white-space: wrap;
+  // word-break: break-all;
+  // hyphens: auto;
 }
