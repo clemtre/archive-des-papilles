@@ -13,7 +13,7 @@ layout: default
   <div class="cartes-ctn">
     <div class="carroussel" id="container">
       {%- for recette in site.recettes -%} {%- if recette.entete -%}
-      <div class="carte">
+      <div class="carte" id="{{recette.titre | slugify: 'latin'}}">
 
         <a href="{{ recette.url | relative_url }}">
           <img
@@ -22,13 +22,13 @@ layout: default
           src="/assets/images/{{recette.entete}}"
           alt=""
           />
-          <p class="carte-titre">{{recette.titre}}</p>
+          <p class="carte-titre meta">{{recette.titre}}</p>
         </a>
       </div>      {%- endif -%} {%- endfor -%} 
       {%- assign sorted_thematiques = site.thematiques | sort:"order" -%}
       {%- for thematique in sorted_thematiques -%}
       {%- if thematique.entete -%}
-<div class="carte thematique">
+<div class="carte thematique" id="{{thematique.titre | slugify: 'latin'}}">
 
   <a  href="{{ thematique.url | relative_url}}">
     <img
@@ -43,11 +43,11 @@ layout: default
 </div>
   {%- endif -%} {%- endfor -%}
 
-  <div class="carte thematique" id="carte-img-home">
+  <div class="carte thematique" id="homecart" >
 
     <a  href="/">
       <img
-      class="carte-img"
+      class="carte-img" id="carte-img-home"
       onload="fadeIn(this)"
       src="/assets/images/home.png"
       alt=""

@@ -24,7 +24,7 @@ Cette recette vient de Christelle, la maman de la meilleure amie de ma sœur qua
 
 Petite anecdote numéro 1 : une amie a voulu me faire un tiramisu pour mon anniversaire et possédait cette recette initiale (sans les ajouts de textes). Seulement comme l’écriture n’est pas facilement déchiffrable elle a lu 950g de mascarpone au lieu de 250g. Il était compact mais délicieux quand même !
 
-Petite anecdote numéro 2 : il se trouve que le tiramisu est aussi le dessert préféré de Fabrice (mon coloc, cf recette de [L'apéro collaboratif](recettes/Arthur_Pouzet/apero_collaboratif.html){:.lien_recette_S}). Pour son anniversaire on a fait un concours de tiramisu car chacun avait sa recette fétiche (moi de mon papa et lui de sa maman), puis les invités devaient voter pour leur préféré. La principale variation, c’est qu’il met du nesquik en poudre et moi du cacao (et il met plus d’oeufs et de sucre).
+Petite anecdote numéro 2 : il se trouve que le tiramisu est aussi le dessert préféré de Fabrice (mon coloc, cf recette de [L'apéro collaboratif](l-apero_collaboratif){:.lien_recette_S}). Pour son anniversaire on a fait un concours de tiramisu car chacun avait sa recette fétiche (moi de mon papa et lui de sa maman), puis les invités devaient voter pour leur préféré. La principale variation, c’est qu’il met du nesquik en poudre et moi du cacao (et il met plus d’oeufs et de sucre).
 
 - - -
 # Le tiramisu Gargantuesque

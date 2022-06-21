@@ -52,8 +52,7 @@
 }
 
 #carte-img-home {
-    scale: 2;
-    transform-origin: center;
-    transform: translate(50vw);
-    display: none;
+    max-width: calc(100vw - 10px);
+    max-height: 10000px;
+
 }

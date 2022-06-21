@@ -4,8 +4,8 @@
   // rotate: 30deg;
   transform-origin: bottom;
   height: calc(100vh - 10px);
-  max-height: 50vh;
-  max-width: calc(100vw - 10px);
+  max-height: 60vh;
+  max-width: calc(100vw - 100px);
   object-fit: contain;
   overflow: visible;
   transition: all 1s;
@@ -19,7 +19,7 @@
   bottom: -100px;
   // overflow: visible !important;
   width: 80%;
-  font-family: $MA !important;
+  font-family: $MA;
   margin: 0 10%;
   font-size: $S;
   line-height: $S-LH;
@@ -27,6 +27,9 @@
   text-align: center;
   opacity: 0;
   text-decoration: underline;
+}
+.meta {
+  font-family: $Meta !important;
 }
 .active {
   opacity: 1;

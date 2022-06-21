@@ -1,3 +1,37 @@
+$('#container').append($('#la-tarte-au-citron-secrete'))
+// recette tarte citron
+$('#container').append($('#recettes-qui-ressucitent'))
+// 1 thematique ressuciter
+$('#container').append($('#les-fifi-figues-de-picsou-magazine'))
+$('#container').append($('#les-fifi-figues-de-picsou-magazine'))
+// 2 recettes 
+$('#container').append($('#le-festin-des-glanneuses'))
+// 1 festin des glaneu
+$('#container').append($('#les-fajitas-inimittables'))
+$('#container').append($('#la-ratatouille-entre-amies'))
+// 2 recettes
+$('#container').append($('#le-tiramisu-gargantuesque'))
+// 1 tiramisu
+$('#container').append($('#lemon-pasta-en-une-casserole'))
+$('#container').append($('#l-ambroisie-des-sims-et-des-dieux'))
+$('#container').append($('#le-columbo-de-dinde-grave-dans-l-ame'))
+// 3 recettes
+// $('#container').append($('#les-fifi-figues-de-picsou-magazine'))
+// 1 thematique
+$('#container').append($('#le-gateau-au-marrons-des-annes-30'))
+$('#container').append($('#les-croissants-qui-mettent-tout-le-monde-d-accord'))
+$('#container').append($('#la-ratatouille-entre-amis'))
+// 3 recettes
+$('#container').append($('#une-langue-maternelle'))
+// 1 thematique
+$('#container').append($('#l-apero-collaboratif'))
+$('#container').append($('#l-indetronable-gateau-au-yaourt'))
+$('#container').append($('#la-poele-de-sentiments'))
+$('#container').append($('#la-sauce-qui-pourrait-rendre-fou'))
+$('#container').append($('#les-fifi-figues-de-picsou-magazine'))
+// 5 recettes
+$('#container').append($('#homecart'))
+// home
 let titreSite = true;
 
 const thematiques = $('.thematique')
@@ -12,7 +46,6 @@ function fadeIn(obj) {
     "px";
 }
 const cartes = document.querySelectorAll(".carte");
-const container = document.getElementById("container");
 for (let i = 0; i < images.length; i++) {
   images[i].style.rotate = Math.random() * 20 - 10 + "deg";
 }
@@ -31,11 +64,13 @@ for (let i = 0; i < cartes.length; i++) {
     distance: 50,
     start: function (event, ui) {
       $(".titre-img").addClass("fadeOut");
-      // event.target.style.transition = "none";
+      event.target.style.transition = "none";
       $(".carte-titre").removeClass("active");
-      if(event.target.previousSibling){
-        event.target.previousSibling.children[0].children[1].classList.add("active")
-      }
+      // if(event.target.previousSibling){
+      //   event.target.previousSibling.children[0].children[1].classList.add("active")
+      // }
+      $(event.target).prev().find($('p')).addClass('active')
+
       // else {
       //   // fallback qunad target = carte-titre[carte-titre.length]
       //   // à implémenter
@@ -53,6 +88,9 @@ for (let i = 0; i < cartes.length; i++) {
         }
       },
       stop: function (event, ui) {
+        if(event.target.children[0].firstElementChild.id == 'carte-img-home'){
+          event.target.style.scale = '.8'
+        }
         if (vaSortir) {
           event.target.style.transition = "all .2s";
           cartes.forEach((j) => j.style.zIndex++);
@@ -75,3 +113,5 @@ let x = 0;
 let y = 0;
 
 let vaSortir = false;
+
+console.log(...$('#container').children().get())
