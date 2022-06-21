@@ -5,7 +5,7 @@ type: plat
 saveur: 
 - salé
 - consistant
-regime: 'végétarien'
+regime: végétarien
 nom : Sophie
 age : 24
     

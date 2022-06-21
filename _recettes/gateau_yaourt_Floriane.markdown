@@ -16,7 +16,7 @@ thematiques:
 entete: gateau_yaourt_grand_maman_flo.png 
 images:
     - gateau_yaourt_grand_maman_flo.png
-    - assets/florianne_dion/gateau_yaourt_maman_flo.png
+    - gateau_yaourt_maman_flo.png
 
 legendes:
     - Recette originale créée par la grand-mère de Floriane, Simone Guilleminot, née le 1er février 1919 à Arpajon en France.
@@ -42,6 +42,7 @@ Je me souviendrai de la première recette que ma grand-mère a partagée avec mo
 - - -
 # Le gâteau au yaourt jusqu'à la lune
 *Version de la mère de Floriane*
+- - -
 
 ## Ingrédients : 
 *Utiliser un petit pot de yaourt pour mesurer les ingrédients*
@@ -61,4 +62,3 @@ Je me souviendrai de la première recette que ma grand-mère a partagée avec mo
 3. Versez la préparation dans un moule rond beurré (graissé) et fariné. Faites cuire à feu doux 25 à 30 minutes environ ou selon votre four : 180°C ou 350°F. 
 4. Vérifiez si le gâteau est cuit au centre avec la pointe d'un couteau. 
 5. *Dégustez :)*
-- - -

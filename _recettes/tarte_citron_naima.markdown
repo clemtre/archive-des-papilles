@@ -12,7 +12,6 @@ age : 25
 
 entete: audio_home.png
 images:
-    - audio.gif
     - Tiramisu_Arthur_Pouzet.png
 audio: tarte_au_citron_Naima.mp3
 

@@ -16,12 +16,16 @@ collections:
     output: true
 
 defaults:
-  - 
-    scope:
+  - scope:
       path: ""
       type: "recettes"
     values:
       layout: "recette"
+  - scope:
+      path: ""
+      type: "thematiques"
+    values:
+      layout: "thematique"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

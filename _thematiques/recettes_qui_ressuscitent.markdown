@@ -1,5 +1,7 @@
 ---
-layout : post
+order: 2
+
+layout : thematique
 titre : Recettes qui ressuscitent
 date : 20220614
 recettes : 
@@ -33,7 +35,7 @@ Quand un plat est si étroitement lié à une personne, au plaisir incarné d’
 
 On continue ainsi à faire vivre, à travers les saveurs et les gestes mimés; une recette conservée, c’est garder avec soi une incantation ordinaire qui peut ranimer, brièvement.
 
-*“Les mains et le cœur de ma grand-mère étaient toujours chauds, comme son foyer. Son cœur, c'était le foyer. Maintenant, ses recettes : une façon de la serrer près de moi encore une fois.”*{:.extrait_recette} *Floriane, en racontant [Le gâteau au yaourt jusqu’à la lune](gateau_yaourt_Floriane)*{:.lien_recette_S}.{:.reference}.
+*“Les mains et le cœur de ma grand-mère étaient toujours chauds, comme son foyer. Son cœur, c'était le foyer. Maintenant, ses recettes : une façon de la serrer près de moi encore une fois.”*{:.extrait_recette} *Floriane, en racontant [Le gâteau au yaourt jusqu’à la lune](gateau_yaourt_Floriane){:.lien_recette_S}.*{:.reference}.
 
 Comme un rituel aux paramètres précis, la moindre petite approximation culinaire viendra altérer la justesse de l’apparition. Sophie ressuscite sa grand-mère italienne tant bien que mal, en recomposant à tâtons son patrimoine culinaire, disparu avec elle sans laisser de recette aux instructions précises. 
 

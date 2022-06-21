@@ -1,5 +1,6 @@
 ---
-layout : post
+order: 1
+layout : thematique
 titre : Une langue maternelle
 date : 20220614
 recettes : 
@@ -24,7 +25,7 @@ Eva Bettan rapporte que certains participants ont reçu de leurs proches de vive
 Parler encore aujourd’hui d’un patrimoine culinaire détenu par les femmes paraît plutôt vieux-jeu. Le schéma traditionnel de nombreuses cultures assigne “les femmes, à la cuisine". Cette idée s'est particulièrement implantée dans les mentalités à partir des années 50, où l’image d’une ménagère qui tient parfaitement son logis se diffuse à force de publicités leur étant spécifiquement adressées pour vanter les avantages de nouveaux équipements électroménagers. De quoi bien gâter leurs enfants et leur homme : femmes en cuisine donc, pour régaler patriarcat et capitalisme.En conséquence de ce schéma, cela fait donc plusieurs générations que les recettes se transmettent de grand-mère en mère, et de mère en fille. La littérature culinaire l’a d’ailleurs bien compris 
 
 
-Et si il est déjà plus rare de voir des fils apprendre également dans les cuisines, c’est en majorité par une figure maternelle, comme pour la recette du [Columbo de dinde gravé dans l'âme](le_columbo_de_dinde_mathieu){:.lien_recette_S} de Mathieu : *“ Une recette souvent cuisinée par ma mère (sans qu'elle en soit à l'origine), de bons souvenirs car c'est l'une des quelques recettes qu'elle ne laisse JAMAIS brûler sur le feu”.*{:.extrait_recette}
+Et si il est déjà plus rare de voir des fils apprendre également dans les cuisines, c’est en majorité par une figure maternelle, comme pour la recette du [Columbo de dinde gravé dans l'âme](columbo_de_dinde_mathieu){:.lien_recette_S} de Mathieu : *“ Une recette souvent cuisinée par ma mère (sans qu'elle en soit à l'origine), de bons souvenirs car c'est l'une des quelques recettes qu'elle ne laisse JAMAIS brûler sur le feu”.*{:.extrait_recette}
 
 Si l’univers culinaire est aussi rattaché aux femmes, il l’est cependant dans le contexte bien spécifique du travail non reconnu : celui des tâches quotidiennes. Dès lors que l’on passe du côté professionnel de la cuisine, elles sont évincées. Elles ne représentent de 2017 que 17% des chef·fes cuisinier·ese1, et l’écart se creuse d’autant plus que le prestige augmente.
 *1 Enquête de l’INSEE dans le rapport « Les métiers de l'hôtellerie et de la restauration » publié par pôle emploi en décembre 2017.*{:.reference}

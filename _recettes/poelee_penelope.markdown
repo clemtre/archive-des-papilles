@@ -22,7 +22,6 @@ images:
 {:.chapeau}
 *La poêlée de sentiments*{:.titre_recette_L}, un [plat](/plat){:.tag .type} de [fond de placard](/fond_de_placard){:.tag .pratique} [facile](/facile){:.tag .pratique} et [vegan](vegan){:.tag .regime} proposé par **Pénélope, 27 ans, une architecte toujours un peu charrette. Elle cuisine en composant avec ce qu'elle a dans ses placards (soit une limite de trois ingrédients max en général). Ça donne des recettes déclinables, avec une base simple, des épices, des graines et les légumes dispos.**
 
-
 Un échange de recette après un cinéma du dimanche soir avec une douce amie. La dictée des instructions se mêlent à l'expression de ressentis tangents avant la nuit. 
 
 - - - 

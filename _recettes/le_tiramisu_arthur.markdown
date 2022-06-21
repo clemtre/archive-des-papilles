@@ -13,6 +13,9 @@ entete: Tiramisu_Arthur_annote_screenshot.png
 images:
     - Tiramisu_Arthur_annote_screenshot.png
     - Tiramisu_Arthur_Pouzet.png
+legendes :
+    - La recette du Tiramisu Gargantuesque, annotée par Arthur.
+    - La recette originale de Christelle.
 ---
 {:.chapeau}
 *Le tiramisu Gargantuesque*{:.titre_recette_L}, un [dessert](/dessert){:.tag .type} [sucré](/sucre){:.tag .saveur}, [frais](/frais){:.tag .saveur}, et [consistant](/consistant){:.tag .saveur} proposé par **Arthur, 24 ans. Curieux  en cuisine comme dans la vie, il est  adepte des ingrédients atypiques et  des associations hasardeuses**, et cuisine aussi [L'apéro collaboratif](recettes/Arthur_Pouzet/apero_collaboratif.html){:.lien_recette_L}.

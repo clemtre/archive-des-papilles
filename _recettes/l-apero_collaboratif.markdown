@@ -9,7 +9,7 @@ car_pratiques:
     - fond de placard
 nom : Arthur
 age : 24
-entete: apero_collaboratif.wav
+entete: audio_home.png
 audio: apero_collaboratif.wav
 
 ---

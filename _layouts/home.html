@@ -25,11 +25,13 @@ layout: default
           <p class="carte-titre">{{recette.titre}}</p>
         </a>
       </div>
-      {%- endif -%} {%- endfor -%} {%- for thematique in site.thematiques -%}
+      {%- endif -%} {%- endfor -%} 
+      {%- assign sorted_thematiques = site.thematiques | sort:"order" -%}
+      {%- for thematique in sorted_thematiques -%}
       {%- if thematique.entete -%}
-<div class="carte">
+<div class="carte thematique">
 
-  <a  href="{{ thematique.url | relative_url }}">
+  <a  href="{{ thematique.url | relative_url}}">
     <img
     class="carte-img"
     onload="fadeIn(this)"

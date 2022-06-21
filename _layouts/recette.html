@@ -1,58 +1,70 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-  {%- include head.html -%}
-  
-  <body>
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
+{%- include head.html -%}
 
-    <script src="/assets/js/jquery-3.6.0.min.js"></script>
-    <script src="/assets/js/jquery-ui.min.js"></script>
+<body>
 
-    <script src="/assets/js/recettes.js" defer></script>
-    
-    {%- include header.html -%}
-    <main class="page-content" aria-label="Content">
-      {% if page.images.size > 1 %}
-      <div class="carrousel-recette-wrap">
-        
-        <div class="carrousel-recette">
-          
-          
-          {% assign i = 0 %}
-          {%- for image in page.images -%}
-          <figure class="img">
-            <img  src="/assets/images/{{image}}" alt="">
-            <figcaption>{{page.legendes[i]}}</figcaption>
+  <script src="/assets/js/jquery-3.6.0.min.js"></script>
+  <script src="/assets/js/jquery-ui.min.js"></script>
 
-          </figure>
-          {% assign i = i | plus:1 %}
-          {%- endfor  -%}
+  <script src="/assets/js/recettes.js" defer></script>
+
+  {%- include header.html -%}
+  <main class="page-content" aria-label="Content">
+    {% if page.images.size > 1 %}
+    <div class="carrousel-recette-wrap">
+
+      <div class="carrousel-recette">
 
 
-        </div>
-        <div class="compteur">
-          <span id="img-curr"></span>
-          <span>
-            sur
+        {% assign i = 0 %}
+        {%- for image in page.images -%}
+        <figure class="img">
+          <img src="/assets/images/{{image}}" alt="">
+          <figcaption>{{page.legendes[i]}}</figcaption>
 
-          </span>
-          <span id="img-total"></span>
-        </div>
+        </figure>
+        {% assign i = i | plus:1 %}
+        {%- endfor -%}
+
+
       </div>
-      {%- else -%}
-      <div class="carrousel-recette-wrap">
+      <div class="compteur">
+        <span id="img-curr"></span>
+        <span>
+          sur
 
-        <img class="carrousel-solo" src="/assets/images/{{page.images[0]}}" alt="">
-</div>
-      {%- endif -%}
+        </span>
+        <span id="img-total"></span>
+      </div>
+    </div>
+    {%- else -%}
+    <div class="carrousel-recette-wrap">
 
-      <!-- <div class="wrapper"> -->
-        {{ content }}
-        
-        
-      </main>
-      <p id="telecharger" class="L centre souligne rouge">Télécharger la recette</p>
-    <script>
-    </script>
-  </body>
+      <img class="carrousel-solo" src="/assets/images/{{page.images[0]}}" alt="">
+    </div>
+    {%- endif -%}
+    {%- if page.audio -%}
+    <input class="audio-img" type="button" onclick="audioPlay()">
+    <audio onclick="audioPlay()" id="audio" src="/assets/images/{{page.audio}}">
+    </audio>
+
+    {%- endif -%}
+    {%- if page.videos -%}
+    {% for video in page.videos %}
+    <video controls src="/assets/images/{{video}}"></video>
+    {% endfor %}
+
+    {%- endif -%}
+
+    <!-- <div class="wrapper"> -->
+    {{ content }}
+
+
+  </main>
+  <p id="telecharger" class="L centre souligne rouge">Télécharger la recette</p>
+  <script>
+  </script>
+</body>
 
 </html>

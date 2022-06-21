@@ -26,8 +26,6 @@ images:
     - Les-Glaneuses-3.png
     - Les-Glaneuses-4.png
     - Les-Glaneuses-5.png
-    # - debris_au_vent.mp4
-    # - cuisine_post_glannage.mp4
     - resultat.jpg
     - resultat_frigo.jpg
     - chips_bananes.jpg
@@ -42,7 +40,9 @@ legendes:
     - Extrait du carnet de Juliette, recettes et instants coutumiers de glanneuses
     - Extrait du carnet de Juliette, recettes et instants coutumiers de glanneuses
 
-
+videos:
+    - debris_au_vent.mp4
+    - cuisine_post_glannage.mp4
 
 ---
 {:.chapeau}

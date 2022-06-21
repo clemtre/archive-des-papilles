@@ -1,10 +1,14 @@
 let titreSite = true;
 
+const thematiques = $('.thematique')
+
+
+
 const images = document.querySelectorAll(".carte-img");
 function fadeIn(obj) {
   obj.style.rotate = "0deg";
   obj.parentNode.parentNode.style.left =
-    (window.innerWidth - obj.parentNode.getBoundingClientRect().width) / 2 +
+  (window.innerWidth - obj.parentNode.getBoundingClientRect().width) / 2 +
     "px";
 }
 const cartes = document.querySelectorAll(".carte");
@@ -12,6 +16,8 @@ const container = document.getElementById("container");
 for (let i = 0; i < images.length; i++) {
   images[i].style.rotate = Math.random() * 20 - 10 + "deg";
 }
+
+
 
 for (let i = 0; i < cartes.length; i++) {
   cartes[i].style.zIndex = i;
@@ -25,17 +31,16 @@ for (let i = 0; i < cartes.length; i++) {
     distance: 50,
     start: function (event, ui) {
       $(".titre-img").addClass("fadeOut");
-      console.log(event.target.nextSibling.children[0].children[1])
       // event.target.style.transition = "none";
       $(".carte-titre").removeClass("active");
       if(event.target.previousSibling){
         event.target.previousSibling.children[0].children[1].classList.add("active")
       }
-      else {
-        // fallback qunad target = carte-titre[carte-titre.length]
-        // à implémenter
-        event.target.parentNode.parentNode.parentNode.children[event.target.parentNode.parentNode.parentNode.children.length].children[0].children[1].classList.add("active")
-      }
+      // else {
+      //   // fallback qunad target = carte-titre[carte-titre.length]
+      //   // à implémenter
+      //   event.target.parentNode.parentNode.parentNode.children[event.target.parentNode.parentNode.parentNode.children.length].children[0].children[1].classList.add("active")
+      // }
     },
     drag: function (event, ui) {
       let largeur = event.target.getBoundingClientRect().width;

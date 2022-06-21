@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
+{%- include head.html -%}
+
+<body>
+
+  <script src="/assets/js/jquery-3.6.0.min.js"></script>
+  <script src="/assets/js/jquery-ui.min.js"></script>
+
+
+  {%- include header.html -%}
+  <main class="page-content" aria-label="Content">
+    {{ content }}
+
+
+  </main>
+</body>
+
+</html>
