@@ -124,7 +124,7 @@
           text-align: center;
           line-height: 36px;
           margin-top: 23px;
-          font-size: $M;
+          font-size: $S;
           color: $blanc;
         }
       }
@@ -137,7 +137,7 @@
       flex-direction: column;
       text-align: center;
       // height: 100%;
-      background: linear-gradient(180deg, $blanc 95%, $vert 100%);
+      background: linear-gradient(180deg, $blanc 95%, $rouge-rose 100%);
       * {
         line-height: 40px;
         align-self: center;
@@ -146,7 +146,7 @@
       }
       a {
         margin-left: 0;
-        font-size: 50px;
+        font-size: $L*2;
         font-weight: bold;
       }
       align-self: center;
@@ -166,7 +166,7 @@
       }
     }
     section:hover {
-      background: linear-gradient(180deg, $blanc 95%, $rouge-rose 100%);
+      background: linear-gradient(180deg, $blanc 95%, $vert 100%);
       span {
         color: $rouge-rose;
       }

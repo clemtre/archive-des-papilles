@@ -24,8 +24,7 @@ layout: default
           />
           <p class="carte-titre">{{recette.titre}}</p>
         </a>
-      </div>
-      {%- endif -%} {%- endfor -%} 
+      </div>      {%- endif -%} {%- endfor -%} 
       {%- assign sorted_thematiques = site.thematiques | sort:"order" -%}
       {%- for thematique in sorted_thematiques -%}
       {%- if thematique.entete -%}
@@ -44,7 +43,7 @@ layout: default
 </div>
   {%- endif -%} {%- endfor -%}
 
-  <div class="carte" id="carte-img-home">
+  <div class="carte thematique" id="carte-img-home">
 
     <a  href="/">
       <img
@@ -53,7 +52,7 @@ layout: default
       src="/assets/images/home.png"
       alt=""
       />
-      <!-- <p class="carte-titre">{{thematique.titre}}</p> -->
+      <p class="carte-titre">{{thematique.titre}}</p>
   
     </a>
   </div>
