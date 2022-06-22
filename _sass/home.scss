@@ -40,7 +40,7 @@
 
 .titre-img {
     position: absolute;
-    width: 80%;
+    width: 60%;
     left: 50%;
     transform: translateX(-50%);
     &:nth-of-type(1){
@@ -52,7 +52,7 @@
 }
 
 #carte-img-home {
-    max-width: calc(100vw - 10px);
+    max-width: calc(100vw - 60px);
     max-height: 10000px;
 
 }
