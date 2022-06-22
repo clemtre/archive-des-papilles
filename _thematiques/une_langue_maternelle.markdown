@@ -57,7 +57,7 @@ Marite a attentivement relevé les préférences de sa petite fille Tess, pour l
 
 Christine s’est mise à arrêter de cuisiner un certain type de plats, pour privilégier les saveurs favorites de sa fille Emma, comme dans [Les tomates farcies du jardin de Grillon](tomates_farcies_christine){:.lien_recette_S}., recette qu'elle lui a transmise. Sa grand-mère, quant à elle, ne manque jamais de leur cuisiner ses classiques quand sa fille ou petite fille viennent la visiter, comme [Le couscous de Mireille](le_couscous_mireille){:.lien_recette_S}. 
 
-Floriane conserve précieusement les deux versions du [Gâteau au yaourt jusqu'à la lune](gateau_yaourt_Floriane){:.lien_recette_S} originellement de sa grand-mère, adapté par sa mère, et qu’elle interprète à son tour. 
+Floriane conserve précieusement les deux versions du [Gâteau au yaourt jusqu'à la lune](/recettes/gateau_yaourt_Floriane){:.lien_recette_S} originellement de sa grand-mère, adapté par sa mère, et qu’elle interprète à son tour. 
 
 Vous trouverez de quoi lire et manger d'autres recettes en langue maternelle à [l'index de cette collection](index/collections/une_langue_maternelle.html){:.souligne}{:.brun}.
 
